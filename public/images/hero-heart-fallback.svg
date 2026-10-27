@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none" role="img" aria-label="Stylised glossy heart">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heart" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#7eb8e8"/>
+      <stop offset="45%" stop-color="#3d8fd4"/>
+      <stop offset="100%" stop-color="#1e5aa8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="200" rx="110" ry="70" fill="url(#glow)"/>
+  <path d="M160 268 C70 200 40 140 70 95 C95 58 130 70 160 105 C190 70 225 58 250 95 C280 140 250 200 160 268Z" fill="url(#heart)"/>
+  <path d="M160 268 C70 200 40 140 70 95 C95 58 130 70 160 105 C190 70 225 58 250 95 C280 140 250 200 160 268Z" fill="url(#shine)" opacity="0.35"/>
+  <path d="M40 250 Q160 40 280 250" stroke="#1E5AA8" stroke-opacity="0.25" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

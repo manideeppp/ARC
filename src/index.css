@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-arc-blue: #1e5aa8;
+  --color-arc-soft: #f1f7fd;
+  --color-arc-navy: #12263f;
+  --color-arc-amber: #f59e0b;
+  --color-arc-green: #2e9e6b;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.mesh-bg-a {
+  background-color: var(--color-arc-soft);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgb(30 90 168 / 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 10%, rgb(245 158 11 / 0.08), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgb(255 255 255 / 0.9), transparent 60%);
+}
+
+.mesh-bg-b {
+  background-color: #e8f2fb;
+  background-image:
+    radial-gradient(ellipse 75% 55% at 85% 25%, rgb(30 90 168 / 0.14), transparent 52%),
+    radial-gradient(ellipse 65% 45% at 15% 75%, rgb(241 247 253 / 0.95), transparent 55%),
+    linear-gradient(165deg, rgb(255 255 255 / 0.65) 0%, transparent 45%);
+}
+
+.mesh-bg-c {
+  background-color: #f6faff;
+  background-image:
+    radial-gradient(ellipse 70% 50% at 20% 30%, rgb(30 90 168 / 0.1), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 80% 80%, rgb(30 90 168 / 0.08), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 0%, rgb(255 255 255 / 0.85), transparent 60%);
+}
+
+.glass-card {
+  border-radius: 1rem;
+  border: 1px solid rgb(255 255 255 / 0.55);
+  background: rgb(255 255 255 / 0.55);
+  box-shadow:
+    0 4px 24px rgb(30 90 168 / 0.08),
+    0 1px 0 rgb(255 255 255 / 0.6) inset;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-arc-navy);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-arc-blue);
+  outline-offset: 2px;
+}
